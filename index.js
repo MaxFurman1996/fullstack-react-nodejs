@@ -1,13 +1,15 @@
 const express = require('express');
-const authRoutes = require('./routes/authRoutes');
-const billingRoutes = require('./routes/billingRoutes');
 const mongoose = require('mongoose');
 const cookieSession = require('cookie-session');
 const passport = require('passport');
 const keys = require('./config/keys');
 const bodyParser = require('body-parser');
 require('./model/User');
+require('./model/Survey');
 require('./services/passport');
+const authRoutes = require('./routes/authRoutes');
+const billingRoutes = require('./routes/billingRoutes');
+const surveyRoutes = require('./routes/surveyRoutes');
 
 
 mongoose.connect(keys.mongoURI, { useNewUrlParser: true });
@@ -24,6 +26,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 authRoutes(app);
 billingRoutes(app);
+surveyRoutes(app);
 
 if(process.env.NODE_ENV == 'production'){
     //Express will serve up production assets(main.js or main.css)

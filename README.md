@@ -4,7 +4,8 @@ Project from [Node with React: Fullstack Web Development](https://www.udemy.com/
 
 In the project directory, you can run:
 
-npm run dev
+### `npm run dev`
+
 Runs client and server side of the app in the development mode.
 Open http://localhost:3000 to view it in the browser.
 

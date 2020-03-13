@@ -1,6 +1,8 @@
 # fullstack-react-nodejs
 Project from [Node with React: Fullstack Web Development](https://www.udemy.com/node-with-react-fullstack-web-development/)
 
+Deployed website: [Emaily](https://afternoon-woodland-56937.herokuapp.com/)
+
 
 In the project directory, install project:
 ### `npm install`

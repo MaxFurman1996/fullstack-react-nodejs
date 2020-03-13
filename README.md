@@ -2,7 +2,10 @@
 Project from [Node with React: Fullstack Web Development](https://www.udemy.com/node-with-react-fullstack-web-development/)
 
 
-In the project directory, you can run:
+In the project directory, install project:
+### `npm install`
+
+and then run project:
 
 ### `npm run dev`
 
